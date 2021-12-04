@@ -3,10 +3,16 @@ package com.company;
 public final class Cat extends Animal {
 private String name;
 private String breed;
-Color color;
+private String owner;
 public Cat(String name,String breed,Color color){
     this.name = name;
     this.breed = breed;
+    super.setColor(color);
+}
+public Cat(String name,String breed,Color color,String owner){
+    this.name = name;
+    this.breed = breed;
+    this.owner = owner;
     super.setColor(color);
 }
     public String getName() {
@@ -20,5 +26,11 @@ public Cat(String name,String breed,Color color){
         return super.getInfo() +
                 "\nName: " + name+
                 "\nBreed: "+ breed;
+}
+    public String getIInfo(){
+        return super.getInfo() +
+                "\nName: " + name+
+                "\nBreed: "+ breed+
+                "\nOwner: "+owner;
     }
 }

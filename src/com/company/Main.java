@@ -11,8 +11,8 @@ public class Main {
         System.out.println(objectB.getInfo());
         objectB.makeVoice("Maw maw");
             System.out.println("--------------------");
-        Cat objectC = new Cat("Rock","Wool",Color.GRAY);
-        System.out.println(objectC.getInfo());
+        Cat objectC = new Cat("Rock","Wool",Color.GRAY,"John");
+        System.out.println(objectC.getIInfo());
         objectC.makeVoice(" Maw",3);
     }
 }

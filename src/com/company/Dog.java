@@ -3,17 +3,17 @@ package com.company;
 public class Dog extends Animal {
     private String name;
     private String breed;
-    private Color color;
-
+    private String owner;
     public Dog(String name, String breed, Color color) {
         this.name = name;
         this.breed = breed;
         super.setColor(color);
     }
-//    public Dog( String name, String breed) {
+//    public Dog( String breed,String name,Color color,String owner) {
 //        this.name = name;
 //        this.breed = breed;
-//      super.getColor();
+//        this.owner = owner;
+//      super.setColor(color);
 //    }
 
     public String getName() {
